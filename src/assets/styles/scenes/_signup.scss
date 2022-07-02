@@ -1,0 +1,41 @@
+.signup-box {
+  border-style: solid;
+  border-color: $dark-orange;
+  margin: 2.5rem;
+  border-radius: 0.25rem;
+  .major-signup {
+    
+      padding: 2rem;
+      width: 75%;
+      display: block;
+      margin-left: 5rem;
+      text-align: left;
+  
+
+    // .major-firstName{}
+    .btn-signup {
+      background-color: $dark-orange;
+      border-color: $black-color;
+      width: 5rem;
+    }
+    .btn-signup:hover {
+      background-color: $black-color;
+      border-color: $dark-orange;
+      color: white;
+    }
+    .major-Name {
+      width: 95%;
+    }
+  }
+}
+//==========================
+
+@media(max-width: 768px){
+  .signup-box .major-signup {
+    padding: 2rem;
+    width: 75%;
+    display: block;
+    margin-left: .5rem;
+    text-align: left;
+}
+}

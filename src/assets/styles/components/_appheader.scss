@@ -1,0 +1,39 @@
+.bg-custom {
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: .10rem solid $black-color;
+  
+  .menu-link {
+    color: $dark-orange;
+
+    text-decoration: none;
+    margin: 10px;
+  }
+  .menu-link:hover {
+    color: $black-color;
+  }
+  .container {
+    .navbar-custom {
+      color: $dark-orange;
+      border-color: $dark-orange;
+      background-color: $dark-orange;
+    }
+  }
+  .nav_buttons {
+    .btn-custom {
+      background-color: #fff;
+      color: $dark-orange;
+      border-color: $black-color;
+    }
+    .btn-custom:hover {
+      background-color: $black-color;
+      color: $dark-orange;
+      border-color: $dark-orange;
+    }
+  }
+}
+.nav_buttons {
+  a {
+    max-width: 70px;
+    margin: 10px;
+  }
+}

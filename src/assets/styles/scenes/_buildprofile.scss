@@ -1,0 +1,43 @@
+.industry-role {
+  width: 95%;
+}
+.build-box {
+  border-style: solid;
+  border-color: $dark-orange;
+  margin: 2.5rem;
+  border-radius: 0.25rem;
+  .major-build {
+    width: 70%;
+    display: block;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    .btn-build {
+      background-color: $dark-orange;
+      border-color: $black-color;
+      color: black;
+    }
+    .btn-build:hover {
+      background-color: $black-color;
+      border-color: $dark-orange;
+      color: white;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .build-box .major-build {
+    padding: 2rem;
+    width: 75%;
+    display: block;
+    // margin-left: ;
+    text-align: left;
+    
+      width: 50%;
+      display: block;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    
+  }
+}

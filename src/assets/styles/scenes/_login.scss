@@ -1,0 +1,24 @@
+.login-box{
+  border-style: solid;
+  border-color: $dark-orange;
+  margin: 2.5rem;
+  border-radius: .25rem;
+  
+  .custom-form{
+    margin: 2.5rem 2.5rem;
+    .login{
+      display: flex;
+      justify-content: center;
+      width: 80%;
+    }
+    .login-submit{
+      background-color: $dark-orange;
+      border-color: $black-color;
+      width: 5rem;
+    }
+    .login-submit:hover{
+      background-color: $black-color;
+
+    }
+  }
+}

@@ -1,0 +1,55 @@
+
+.explore-heading {
+  color: #fff;
+  text-align: center;
+}
+.explore {
+  background-image: linear-gradient(-60deg, #ff4e00 50%, $black-color 50%);
+    display: flex;
+    flex-wrap: wrap;
+
+    .card {
+      min-width: 250px;
+      max-width: 300px;
+      margin: 2rem;
+      box-shadow: 0 19px 38px;
+      border-radius: 25px;
+    }
+    .btn-custom-explore {
+      margin-left: 4.075rem;
+      margin-bottom: 10px;
+      border-radius: 25px;
+      width: 50%;
+      background: black;
+      color: $dark-orange;
+    }
+    .btn-custom-explore:hover {
+      background: $dark-orange;
+      color: black;
+    }
+  }
+////
+
+@media(max-width: 1275px){
+  .explore{
+  .card {
+    min-width: 250px;
+    max-width: 300px;
+    margin: 2rem 2rem;
+    
+    box-shadow: 0 19px 38px;
+  }
+}
+}
+
+@media(max-width: 1270px){
+  .explore{
+  .card {
+    min-width: 250px;
+    max-width: 300px;
+    margin: 2rem ;
+    
+    box-shadow: 0 19px 38px;
+  }
+}
+}

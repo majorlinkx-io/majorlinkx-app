@@ -1,0 +1,30 @@
+{
+  "team": [
+    {
+      "name": "Lorem ",
+      "role": "Head of Lorem",
+      "desc": "He Does ...",
+      "active": "Active Member"
+    },
+    {
+      "name": "Lorem",
+      "role": "Lorem",
+      "desc": "He Does ...",
+      "active": "Founding Member"
+    },
+    {
+      "name": "Lorem",
+      "role": "Head of Lorem",
+      "desc": "He Does ...",
+      "active": "Active Member"
+    },
+    {
+      "name": "Lorem",
+      "role": "Head of Lorem",
+      "desc": "She Does ...",
+      "active": "Active Member"
+    }
+ 
+  ]
+}
+

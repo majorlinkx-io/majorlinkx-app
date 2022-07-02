@@ -1,0 +1,24 @@
+.page-heading{
+text-align: center; 
+}
+.lead{
+  text-align: center;
+}
+.content{
+  text-align: center;
+}
+.team-heading{
+  text-align: center;
+}
+.card-deck{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .card{
+    color: black;
+    min-width: 350px;
+    max-width: 350px;
+    margin: 2rem;
+    box-shadow: 0 19px 38px 
+  }
+}

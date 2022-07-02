@@ -1,0 +1,32 @@
+.profile-cards{
+  margin-right: 1rem;
+  margin-left: 1rem;
+
+
+  .card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+      max-width: 300px;
+      min-width: 200px;
+      border-radius: 25px;
+      .card-img{
+        width: 300px;
+        height: 200px;
+      }
+      margin: 3rem;
+      box-shadow: 0 19px 38px;
+      .btn-custom{
+        background-color: $black-color;
+        color: $dark-orange;
+        margin-left: 4.075rem;
+        width: 50%;
+        margin-bottom: 10px;
+        border-radius: 25px;
+      }
+      .btn-custom:hover{
+        background-color: $dark-orange;
+        color: black;
+      }
+  }
+}

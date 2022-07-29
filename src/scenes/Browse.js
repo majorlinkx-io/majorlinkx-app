@@ -7,12 +7,13 @@ import CardColumns from "react-bootstrap/CardColumns"
 import Row from "react-bootstrap/Row"
 import Spinner from "react-bootstrap/Spinner"
 import { Link } from "react-router-dom"
+import whiteLinkx from "../img/major-white.jpeg"
 
 function UserCards({ oneProfile ,index }) {
   return (
     <Col>
       <Card className="explore-cards">
-        <Card.Img variant="top" src={!oneProfile ? (<p></p>) : !oneProfile.profile ? (<p></p>) : !oneProfile.profile.userPhoto ? (`./img/holder.jpeg`) : oneProfile.profile.userPhoto} width={250} height={250}/>
+      <Card.Img  className="card-img img-fluid"  variant="top" src={!oneProfile.profile ? (whiteLinkx) : !oneProfile.profile.userPhoto ? (whiteLinkx) : oneProfile.profile.userPhoto} width={250} height={250}/>  
         <Card.Body>
           <Card.Title>
             <strong>@</strong>
@@ -56,7 +57,7 @@ function Browse() {
   
   return (
     <>
-      <Row className="explore major-explore">
+      <Row className="explore">
       <h2 className="explore-heading"> Explore </h2>
       <div className="killer-bg"></div>
         {!allProfiles ? (

@@ -27,7 +27,7 @@ function Profiles() {
             return (
               <Col>
                 <Card>
-                <Card.Img  className="card-img img-fluid"  variant="top" src={!oneProfile.profile ? (whiteLinkx) : !oneProfile.profile.userPhoto ? (`${process.env.PUBLIC_URL}/img/major-v2`) : oneProfile.profile.userPhoto} width={250} height={250}/>  
+                <Card.Img  className="card-img img-fluid"  variant="top" src={!oneProfile.profile ? (whiteLinkx) : !oneProfile.profile.userPhoto ? (whiteLinkx) : oneProfile.profile.userPhoto} width={250} height={250}/>  
                 <Card.Body>
                 <Card.Title><strong>@</strong>{!oneProfile ? (<p>Loading...</p>) : (oneProfile.stageName) }</Card.Title>
                 <Card.Text>

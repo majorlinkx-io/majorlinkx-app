@@ -3,7 +3,7 @@ import Profiles from './Profiles'
 
 function Main() {
   return (
-  <div className=' profile-cards'>
+  <div className='profile-cards'>
     <Profiles/>
   </div>
 )

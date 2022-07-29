@@ -4,6 +4,8 @@ import Row from "react-bootstrap/Row"
 import { Link } from "react-router-dom"
 import Col from "react-bootstrap/Col"
 import Spinner from "react-bootstrap/Spinner"
+import whiteLinkx from "../../../img/major-white.jpeg"
+
 function Profiles() {
   const [topProfiles, setTopProfiles] = useState()
   useEffect(() => {
@@ -25,7 +27,7 @@ function Profiles() {
             return (
               <Col>
                 <Card>
-                <Card.Img  className="home-photos img-fluid"  variant="top" src={!oneProfile ? (<p></p>) : !oneProfile.profile ? (<p></p>) : !oneProfile.profile.userPhoto ? (`./img/holder.jpeg`) : oneProfile.profile.userPhoto} width={250} height={250}/>  
+                <Card.Img  className="card-img img-fluid"  variant="top" src={!oneProfile.profile ? (whiteLinkx) : !oneProfile.profile.userPhoto ? (`${process.env.PUBLIC_URL}/img/major-v2`) : oneProfile.profile.userPhoto} width={250} height={250}/>  
                 <Card.Body>
                 <Card.Title><strong>@</strong>{!oneProfile ? (<p>Loading...</p>) : (oneProfile.stageName) }</Card.Title>
                 <Card.Text>

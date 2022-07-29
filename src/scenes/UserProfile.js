@@ -8,6 +8,7 @@ import {
   FaSoundcloud,
   FaTwitter,
 } from "react-icons/fa"
+import majorBlack from '../img/major-black.jpeg'
 
 function UserProfile() {
   const [user, setUser] = useState()
@@ -21,7 +22,7 @@ function UserProfile() {
       .then((data) => setUser(data))
       .catch((err) => console.log(err))
   }, [])
-  let a = Math.floor(Math.random() *17)
+
   return (
     <div className="user-profile">
       <div className="user-heading">
@@ -29,7 +30,7 @@ function UserProfile() {
       </div>
       <div className="box">
         <Jumbotron fluid>
-          {user && user.profile && user.profile.userPhoto && <img src={user.profile.userPhoto} width={250} height={250}/>}
+          {!user || !user.profile || !user.profile.userPhoto ? <img src={majorBlack} width={250} height={250}/> : <img src={user.profile.userPhoto } width={250} height={250}/>}
           {!user ? <h2></h2> : <h2>{user.firstName}</h2>}
           <p>
             {!user ? (

@@ -6,6 +6,7 @@ import { useHistory } from "react-router-dom"
 import jwt_decode from "jwt-decode"
 function Signup() {
   const [newUser, setNewUser] = useState() // useState
+
   const [error, setError] = useState()
   
   const history = useHistory()
@@ -43,8 +44,10 @@ function Signup() {
 
       .catch((err) => console.log(err))
   }
+  console.log({newUser})
   return (
     <div className ="signup-box">    
+        {/* userName */}
       <Form className='major-signup'>
       <Form.Group className="mb-3" controlId="formGroupPassword">
         <Form.Label>Username</Form.Label>
@@ -61,6 +64,7 @@ function Signup() {
       </Form.Group>
 
       <Row className="mb-3">
+        {/* firstName */}
         <Form.Group as={Col} controlId="formGridEmail">
           <Form.Label>First Name</Form.Label>
           <Form.Control
@@ -72,7 +76,7 @@ function Signup() {
             placeholder="Enter First Name"
           />
         </Form.Group>
-
+        {/* lastName */}
         <Form.Group as={Col} controlId="formGridPassword">
           <Form.Label>Last Name</Form.Label>
           <Form.Control
@@ -85,7 +89,7 @@ function Signup() {
           />
         </Form.Group>
       </Row>
-
+          {/*Email */}
       <Form.Group className="mb-3" controlId="formGroupEmail">
         <Form.Label>Email address</Form.Label>
         <Form.Control
@@ -94,7 +98,7 @@ function Signup() {
           placeholder="Enter email"
         />
       </Form.Group>
-
+       {/*Password */}
       <Form.Group className="mb-3" controlId="formGroupPassword">
         <Form.Label>Password</Form.Label>
         <Form.Control
@@ -103,7 +107,7 @@ function Signup() {
           placeholder="Password"
         />
       </Form.Group>
-
+      {/* Birthday */}
       <Form.Group className="mb-3" controlId="formGroupPassword">
         <Form.Label>Birthday</Form.Label>
         <Form.Control
